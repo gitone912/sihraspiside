@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Parcel Image</title>
+</head>
+<body>
+    <h1>Submit Parcel Image</h1>
+    <form action="/submit_parcel_image" method="post" enctype="multipart/form-data">
+        <label for="article_number">Article Number:</label>
+        <input type="text" id="article_number" name="article_number" required><br><br>
+
+        <label for="date_of_registration">Date of Registration:</label>
+        <input type="date" id="date_of_registration" name="date_of_registration" required><br><br>
+
+        <label for="serial_number">Serial Number:</label>
+        <input type="text" id="serial_number" name="serial_number" required><br><br>
+
+        <label for="image">Image File:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

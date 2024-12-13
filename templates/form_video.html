@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Video</title>
+</head>
+<body>
+    <h1>Submit Surveillance Video</h1>
+    <form action="/submit_video" method="post" enctype="multipart/form-data">
+        <label for="camera_name">Camera Name:</label>
+        <input type="text" id="camera_name" name="camera_name" required><br><br>
+
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" name="latitude" required><br><br>
+
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" name="longitude" required><br><br>
+
+        <label for="video">Video File:</label>
+        <input type="file" id="video" name="video" accept="video/*" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

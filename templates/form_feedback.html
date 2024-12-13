@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback</title>
+</head>
+<body>
+    <h1>Submit Feedback</h1>
+    <form action="/submit_feedback" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="tracking_id">Tracking ID:</label>
+        <input type="text" id="tracking_id" name="tracking_id" required><br><br>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="photo">Photo (Optional):</label>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
