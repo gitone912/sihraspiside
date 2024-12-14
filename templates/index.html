@@ -55,6 +55,19 @@ x<!DOCTYPE html>
         color: white;
     }
 </style>
+<script>
+    function startRecording() {
+        fetch('/start_recording', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => alert(data.status));
+    }
+
+    function stopRecording() {
+        fetch('/stop_recording', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => alert(data.status));
+    }
+</script>
 </head>
 <body>
     <h1>Flask Client for Django APIs</h1>
@@ -64,5 +77,8 @@ x<!DOCTYPE html>
         <li><a href="/form_feedback">Submit Feedback</a></li>
         <li><a href="/form_parcel_image">Submit Parcel Image</a></li>
     </ul>
+    <h3>Camera Control</h3>
+    <button onclick="startRecording()">Start Recording</button>
+    <button onclick="stopRecording()">Stop Recording</button>
 </body>
 </html>
