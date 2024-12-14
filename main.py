@@ -5,7 +5,7 @@ import base64
 app = Flask(__name__)
 
 # Replace with the Django server's API URLs
-API_BASE_URL = "http://127.0.0.1:8000/api"
+API_BASE_URL = "https://53b0-115-248-83-146.ngrok-free.app/api"
 POSTMASTER_URL = f"{API_BASE_URL}/postmaster/"
 SURVEILLANCE_VIDEO_URL = f"{API_BASE_URL}/surveillance/"
 FEEDBACK_URL = f"{API_BASE_URL}/feedback/"
